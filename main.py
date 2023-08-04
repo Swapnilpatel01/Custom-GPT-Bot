@@ -42,7 +42,7 @@ pinecone.init(
     api_key="",
     environment=""
 )
-pinecone_index_name = "test1"
+pinecone_index_name = ""
 index = Pinecone.from_documents(docs, embeddings, index_name=pinecone_index_name)
 
 def get_similar_docs(query, k=2, score=False):
